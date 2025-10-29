@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/care_finder/landing_page/$1" }
+  ]
+}
+
