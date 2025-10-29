@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>care finder</title>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="faqs.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo"><img src="../image/care_finder_2.png" alt="care finder logo"></div>
+        <div class="nav">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="Departments.html">Departments</a></li>
+                <li><a href="emergency.html">Emergency</a></li>
+                <li><a href="appoinment.html">Appoinments</a></li>
+                <li><a href="healthtips.html">Health Tips</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+                <li><a href="contactus.html">Contact us</a></li>
+            </ul>
+            <div class="profile" tabindex="0"><img src="../image/user_logo.png" alt="user logo">
+                <div class="enable">
+                    <ul>
+                        <li><i class="fa-solid fa-user"></i>Your profile</li>
+                        <li><i class="fa-solid fa-gear"></i>Settings</li>
+                        <li><i class="fa-solid fa-file-contract"></i>Terms & conditions</li>
+                        <li class="logout"><a href="../index.html">Logout <i
+                                    class="fa-solid fa-right-from-bracket"></i></a></li>
+                        <li class="Thanks">Thanks !</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+
+        <div class="container">
+            <h1>Frequently Asked Questions</h1>
+
+            <div class="faq">
+                <div class="faq-question" onclick="visible(0)">How can I book an appointment?</div>
+                <div class="faq-answer">You can book an appointment by visiting our Appointment section, selecting your
+                    preferred hospital, department, doctor, and time slot, then confirming your booking.</div>
+            </div>
+
+            <div class="faq">
+                <div class="faq-question" onclick="visible(1)">Do I need to register before booking?</div>
+                <div class="faq-answer">Registration is optional for first-time bookings, but creating an account helps
+                    you track, reschedule, or cancel appointments easily.</div>
+            </div>
+
+            <div class="faq">
+                <div class="faq-question" onclick="visible(2)">Is emergency booking available?</div>
+                <div class="faq-answer">Yes, our Emergency Appointment option allows quick booking for urgent cases and
+                    assigns the first available doctor immediately.</div>
+            </div>
+
+            <div class="faq">
+                <div class="faq-question" onclick="visible(3)">Can I cancel or reschedule my appointment?</div>
+                <div class="faq-answer">Yes, you can cancel or reschedule through your account dashboard or by
+                    contacting the hospital directly.</div>
+            </div>
+
+            <div class="faq">
+                <div class="faq-question" onclick="visible(4)">What payment methods are accepted?</div>
+                <div class="faq-answer">We accept online payments via credit/debit cards, UPI, and net banking, as well
+                    as cash payments at the hospital.</div>
+            </div>
+
+        </div>
+
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="follow">
+                <p>follow us</p>
+                <div class="links">
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+            <p>&copy; 2025 Care Finder | All Rights Reserved</p>
+            <p class="made">Made with ❤️ by Care Finder</p>
+        </div>
+    </footer>
+    <script>
+        
+        let match = 1;
+        function visible(a) {
+            if (match == 1) {
+                document.getElementsByClassName("faq-answer")[a].style.display = "block";
+                match = 0;
+            } else {
+                document.getElementsByClassName("faq-answer")[a].style.display = "none";
+                match = 1;
+            }
+        }
+    </script>
+</body>
+
+</html>

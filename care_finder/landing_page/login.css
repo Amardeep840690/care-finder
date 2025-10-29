@@ -1,0 +1,99 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.772);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container {
+    height: 36rem;
+    width: 35rem;
+    background-color: rgb(240, 248, 255);
+    color: black;
+    border-radius: 10px;
+
+}
+
+.container h1 {
+    padding: 45px 230px;
+    padding-top: 55px;
+}
+
+.container .form div {
+    margin: 20px 150px;
+    font-size: 18px;
+}
+
+.container .form div label {
+    display: block;
+}
+
+.container .form div input {
+    margin: 5px 10px;
+    padding: 10px 50px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+.container .form .base a {
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.container .form .base button a {
+    text-decoration: none;
+    color: #6097cf;
+}
+
+.container .form .base .forgot {
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+.container .form .base button {
+    margin-left: 80px;
+    margin-top: 25px;
+    padding: 10px 20px;
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+#error {
+    display: flex;
+    justify-content: center;
+    border: 1px solid rgba(162, 136, 136, 0.095);
+    border-radius: 6px;
+    color: rgb(178, 99, 99);
+    background-color: rgba(162, 113, 113, 0.169);
+    margin: 10px 90px;
+    padding: 5px 0px;
+    visibility: hidden;
+    animation:0.5s ease-in-out 0s 1;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.122);
+}
+
+#error div p {
+    text-align: center;
+    line-height: 21px;
+}
+@keyframes slide{
+    0%{
+        transform: translateY(-5px) scale(1.02);
+    }
+    100%{
+        transform: translateY(0px) scale(1);
+    }
+}

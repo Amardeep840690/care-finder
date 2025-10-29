@@ -1,0 +1,72 @@
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+    color: #333;
+}
+
+div.heading {
+    color: #153a73;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    margin:7px 0px;
+    font-size: 2rem;
+}
+
+section {
+    padding: 20px;
+    line-height: 1.5rem;
+}
+section h2{
+    margin: 10px 5px;
+}
+
+.contact-list {
+    background-color: #e3f2fd;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.contact-item {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.contact-item span {
+    text-decoration: none;
+    color: #153a73;
+    font-weight: bold;
+}
+
+.first-aid {
+    background-color: #e3f2fd;
+    padding: 15px 30px;
+    border-radius: 8px;
+    line-height: 30px;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.btn {
+    flex: 1;
+    padding: 15px;
+    text-align: center;
+    background-color: #59a3ed;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #439af1;
+}

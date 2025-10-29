@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>care finder</title>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="appoinment.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo"><img src="../image/care_finder_2.png" alt="care finder logo"></div>
+        <div class="nav">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="Departments.html">Departments</a></li>
+                <li><a href="emergency.html">Emergency</a></li>
+                <li><a href="appoinment.html">Appoinments</a></li>
+                <li><a href="healthtips.html">Health Tips</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+                <li><a href="contactus.html">Contact us</a></li>
+            </ul>
+            <div class="profile" tabindex="0"><img src="../image/user_logo.png" alt="user logo">
+                <div class="enable">
+                    <ul>
+                        <li><i class="fa-solid fa-user"></i>Your profile</li>
+                        <li><i class="fa-solid fa-gear"></i>Settings</li>
+                        <li><i class="fa-solid fa-file-contract"></i>Terms & conditions</li>
+                        <li class="logout"><a href="../index.html">Logout <i
+                                    class="fa-solid fa-right-from-bracket"></i></a></li>
+                        <li class="Thanks">Thanks !</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="display">
+       <p>Thank you for scheduling your appointment.</p>
+        <p>A confirmation message, along with all relevant details, will be sent to your registered email address.</p>
+    </div>
+    <main>
+        <div class="info">
+            <p>
+                Book Your Doctor Visit Easily – Schedule an appointment with your preferred hospital, department, and
+                doctor in just a few clicks. Choose your date and time, and get instant confirmation for hassle-free
+                healthcare.
+            </p>
+        </div>
+
+        <section id="appointment">
+            <h2>Book an Appointment</h2>
+            <form onsubmit="myfun(event)">
+                <div>
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" class="same" placeholder="Enter your full name" required>
+                </div>
+                <div>
+                    <label for="contact">Contact Number</label>
+                    <input type="tel" id="contact" class="same" placeholder="Enter your contact number" required>
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" class="same" placeholder="Enter your email address" required>
+                </div>
+                <div>
+                    <label for="department">Select Department</label>
+                    <select id="department" class="same" required>
+                        <option value="">-- Select Department --</option>
+                        <option value="cardiology">cardiology</option>
+                        <option value="ayurveda">ayurveda</option>
+                        <option value="dental care">dental care</option>
+                        <option value="diagnostics">diagnostics</option>
+                        <option value="cancer alternative treatments">cancer alternative treatments</option>
+                        <option value="skin treatments">skin treatments</option>
+                        <option value="ear nose throat ENT">ear nose throat ENT</option>
+                        <option value="general surgery">general surgery</option>
+                        <option value="herbal treatments">herbal treatments</option>
+                        <option value="physical rehabilitation">physical rehabilitation</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="doctor">Select Doctor</label>
+                    <select id="doctor" class="same" required>
+                        <option value="">-- Select Doctor --</option>
+                        <option>Dr. A Sharma</option>
+                        <option>Dr. B Singh</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="hospital">Preferred Hospital</label>
+                    <select id="hospital" class="same" required>
+                        <option value="">-- Select Hospital --</option>
+                        <option>Bachcha Hospital</option>
+                        <option>Sadar Hospital</option>
+                        <option>MARC Hospital</option>
+                        <option>Radiant Hospital</option>
+                        <option>Global Hospital</option>
+                        <option>Advance Eye Care Hospital</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="date">Appointment Date</label>
+                    <input type="date" id="date" class="same" required>
+                </div>
+                <div>
+                    <label for="time">Preferred Time</label>
+                    <input type="time" id="time" class="same" required>
+                </div>
+                <div>
+                    <label for="reason">Reason for Visit</label>
+                    <textarea id="reason" class="same" placeholder="Describe your concern..."></textarea>
+                </div>
+                <button type="submit">Book Now</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="follow">
+                <p>follow us</p>
+                <div class="links">
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+            <p>&copy; 2025 Care Finder | All Rights Reserved</p>
+            <p class="made">Made with ❤️ by Care Finder</p>
+        </div>
+    </footer>
+    <script>
+        function myfun(event) {
+            event.preventDefault();
+            let same = Array.from(document.getElementsByClassName("same"));
+            for (let i = 0; i < same.length; i++) {
+                same[i].value = "";
+            }
+            let div = document.getElementById("display");
+            div.style.visibility = "visible";
+            div.style.animationName = "slide";
+            setTimeout(() => {
+                div.style.visibility = "hidden";
+                div.style.animationName = "s";
+            }, 5000)
+        }
+    </script>
+</body>
+
+</html>

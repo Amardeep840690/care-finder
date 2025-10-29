@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>care finder</title>
+    <link rel="stylesheet" href="signUp.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Sign up </h1>
+        <div class="form">
+            <div class="email">
+                <label for="email">Email id: </label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="name">
+                <label for="name">Enter name: </label>
+                <input type="text" id="name" required>
+            </div>
+            <div class="password">
+                <label for="password">Create password:</label>
+                <input type="password" id="password" required>
+            </div>
+            <div class="base">
+                <span class="already">You have already account ?</span>
+                <span><a href="login.html">Login</a></span>
+                <button type="submit" onclick="match()">Sign up</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function match(){
+            let user = document.getElementById("name").value;
+            let pwd = document.getElementById("password").value;
+            let Email = document.getElementById("email").value;
+
+            if (user !== "" && pwd !== "" && email !=="") {
+                location.href = "verify.html";
+            }
+        }
+    </script>
+</body>
+
+
+</html>

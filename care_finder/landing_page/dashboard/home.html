@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>care finder</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo"><img src="../image/care_finder_2.png" alt="care finder logo"></div>
+        <div class="nav">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="Departments.html">Departments</a></li>
+                <li><a href="emergency.html">Emergency</a></li>
+                <li><a href="appoinment.html">Appoinments</a></li>
+                <li><a href="healthtips.html">Health Tips</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+                <li><a href="contactus.html">Contact us</a></li>
+            </ul>
+            <!-- onclick="enable.hidden^=1" -->
+            <div class="profile" tabindex="0"><img src="../image/user_logo.png" alt="user logo">
+                <div class="enable" id="enable"> <!-- hidden -->
+                    <ul>
+                        <li><i class="fa-solid fa-user"></i>Your profile</li>
+                        <li><i class="fa-solid fa-gear"></i>Settings</li>
+                        <li><i class="fa-solid fa-file-contract"></i>Terms & conditions</li>
+                        <li class="logout"><a href="../index.html">Logout <i
+                                    class="fa-solid fa-right-from-bracket"></i></a></li>
+                        <li class="Thanks">Thanks !</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="section1">
+            <p>search hospitals by it's name and specialization</p>
+            <div class="search">
+                <select name="select specialization" id="select">
+                    <option value="select specialization">select specialization</option>
+                    <option value="cardiology">cardiology</option>
+                    <option value="ayurveda">ayurveda</option>
+                    <option value="dental care">dental care</option>
+                    <option value="diagnostics">diagnostics</option>
+                    <option value="cancer alternative treatments">cancer alternative treatments</option>
+                    <option value="skin treatments">skin treatments</option>
+                    <option value="ear nose throat ENT">ear nose throat ENT</option>
+                    <option value="general surgery">general surgery</option>
+                    <option value="herbal treatments">herbal treatments</option>
+                    <option value="physical rehabilitation">physical rehabilitation</option>
+                </select>
+                <input type="search" name="search" id="search" placeholder="search hospital"><i
+                    class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </section>
+        <section class="section2">
+            <h2>Featured Hospitals</h2>
+            <div class="hospital-list">
+
+                <div class="hospital">
+                    <div class="name">
+                        <div class="image"><img src="../image/bachha_hospital.png" alt="bachha hospital"></div>
+                        <p>Bachcha Hospital</p>
+                    </div>
+                    <div class="description">
+                        <p class="specialization">Specialization :</p>
+                        <p>Bachcha Hospital is an advanced, well equipped pediatric hospital the heart of the city
+                            having tert.</p>
+                        <p>Bachcha Hospital provides world-class medical services with expert doctors and advanced
+                            technology. Available 24/7 for emergency care.</p>
+                        <div class="contact">
+                            <p><i class="fa-solid fa-phone"></i> +91 06452 240 222</p>
+                            <p><i class="fa-solid fa-location-dot"></i> H/O. Animesh Bharti, Bachcha Hospital,
+                                Anathalaya Road, Katihar</p>
+                            <p class="view"><i class="fa-solid fa-diamond-turn-right"></i> <a
+                                    href="https://maps.app.goo.gl/xw4LxDtYRVvTCWDX9" target="_blank">view
+                                    in map <i class="fa-solid fa-arrow-up-right-from-square arrow"></i></a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hospital">
+                    <div class="name">
+                        <div class="image"><img src="../image/sadar_hospital.png" alt="Sadar Hospital"></div>
+                        <p>Sadar Hospital</p>
+                    </div>
+                    <div class="description">
+                        <p class="specialization">Specialization :</p>
+                        <p>As a leading healthcare provider in Katihar, we are dedicated to ensuring the health and
+                            well-being of our community. Our hospital delivers a wide spectrum of medical services,
+                            ranging from 24/7 emergency care to advanced and specialized treatments. With a team of
+                            highly experienced doctors, skilled nurses, and compassionate staff, we strive to provide
+                            personalized care tailored to every patient’s needs. Equipped with modern medical technology
+                            and state-of-the-art facilities, we are committed to offering accurate diagnosis, effective
+                            treatment, and comprehensive healthcare solutions—all under one roof. At our hospital, your
+                            health is our priority, and we are here to serve you with excellence and care.</p>
+
+                        <div class="contact">
+                            <p><i class="fa-solid fa-phone"></i> +91 094729 47250</p>
+                            <p><i class="fa-solid fa-location-dot"></i> Rampara, Near EWA Hospital, Katihar 854105</p>
+                            <p class="view"><i class="fa-solid fa-diamond-turn-right"></i> <a
+                                    href="https://maps.app.goo.gl/fekDDzpB8ut3AVq8A" target="_blank">view
+                                    in map <i class="fa-solid fa-arrow-up-right-from-square arrow"></i></a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hospital">
+                    <div class="name">
+                        <div class="image"><img src="../image/MARC_Hospital.png" alt="MARC Hospital"></div>
+                        <p>MARC Hospital</p>
+                    </div>
+                    <div class="description">
+                        <p class="specialization">Specialization :</p>
+                        <p>MARC Hospital | Best Nursing Home In Katihar</p>
+                        <p>MARC Hospital provides world-class medical services with expert doctors and advanced
+                            technology. Available 24/7 for emergency care.</p>
+                        <div class="contact">
+                            <p><i class="fa-solid fa-phone"></i> +91 089861 61196</p>
+                            <p><i class="fa-solid fa-location-dot"></i> Durgasthan Chowk, Katihar, Bihar 854105</p>
+                            <p class="view"><i class="fa-solid fa-diamond-turn-right"></i> <a
+                                    href="https://maps.app.goo.gl/Ck3Fnwrfngaq4fq6A" target="_blank">view
+                                    in map <i class="fa-solid fa-arrow-up-right-from-square arrow"></i></a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hospital">
+                    <div class="name">
+                        <div class="image"><img src="../image/radiant_hospital.png" alt="Radiant Hospital"></div>
+                        <p>Radiant Hospital</p>
+                    </div>
+                    <div class="description">
+                        <p class="specialization">Specialization :</p>
+                        <p>• Dental Crowns & Bridges &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                            &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;
+                            • Dental X-Ray <br>
+                            • General Doctor’s Consultation &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                            • Joint pain <br>
+                            • Medical Services&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                            • Multiple sclerosis</p>
+                        <p>Radiant Hospital in Katihar 854105 is a trusted healthcare provider offering advanced medical
+                            care, expert doctors, and modern facilities for comprehensive treatment.</p>
+                        <div class="contact">
+                            <p><i class="fa-solid fa-phone"></i> +91 088773 03000</p>
+                            <p><i class="fa-solid fa-location-dot"></i> Nh31, Army Colony, Katihar, Bihar 854105</p>
+                            <p class="view"><i class="fa-solid fa-diamond-turn-right"></i> <a
+                                    href="https://maps.app.goo.gl/DhEdtFSz9GwAPX4A6" target="_blank">view
+                                    in map <i class="fa-solid fa-arrow-up-right-from-square arrow"></i></a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hospital">
+                    <div class="name">
+                        <div class="image"><img src="../image/Global_Hospital.png" alt="Global Hospital"></div>
+                        <p>Global Hospital</p>
+                    </div>
+                    <div class="description">
+                        <p class="specialization">Specialization :</p>
+                        <p>We work with governments, NGOs, and private companies to plan, execute, and maintain
+                            healthcare infrastructure projects where they are needed the most. The factors affecting the
+                            availability of quality healthcare vary greatly — from poverty to extreme weather or
+                            disaster events to lack of clinical training — but there is a common thread anywhere you
+                            look: access to quality healthcare can change a person's life.</p>
+                        <p>Global Hospital provides world-class medical services with expert doctors and advanced
+                            technology. Available 24/7 for emergency care.</p>
+                        <div class="contact">
+                            <p><i class="fa-solid fa-phone"></i> +91 06452 240 222</p>
+                            <p><i class="fa-solid fa-location-dot"></i> Nh81, Katihar, Bihar 854106</p>
+                            <p class="view"><i class="fa-solid fa-diamond-turn-right"></i> <a
+                                    href="https://maps.app.goo.gl/8zDdZ9shbuNZfJtUA" target="_blank">view
+                                    in map <i class="fa-solid fa-arrow-up-right-from-square arrow"></i></a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hospital">
+                    <div class="name">
+                        <div class="image"><img src="../image/advance_eye_care_hospital.png"
+                                alt="Advance Eye Care Hospital"></div>
+                        <p>Advance Eye Care Hospital</p>
+                    </div>
+                    <div class="description">
+                        <p class="specialization">Specialization :</p>
+                        <p>Advance Eye Care Hospital is a premier healthcare facility dedicated to providing exceptional
+                            eye care services. Specializing in a wide range of eye treatments and services, the hospital
+                            is committed to enhancing vision and empowering lives. With a focus on cutting-edge
+                            technology, experienced professionals, and a patient-centric approach, Advance Eye Care
+                            Hospital stands as a beacon of hope for those seeking comprehensive eye care solutions.</p>
+
+                        <div class="contact">
+                            <p><i class="fa-solid fa-phone"></i> +91 086040 04809</p>
+                            <p><i class="fa-solid fa-location-dot"></i> Kadampur Katihar Advance EYE Care Kadampur,
+                                Katihar</p>
+                            <p class="view"><i class="fa-solid fa-diamond-turn-right"></i> <a
+                                    href="https://maps.app.goo.gl/Z1R73CHDtCjDezhbA" target="_blank">view
+                                    in map <i class="fa-solid fa-arrow-up-right-from-square arrow"></i></a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="buttons">
+                <button id="pre" onmouseover="myfun1('⬅️ ')" onmouseout="myfun3()">Previous</button>
+                <button id="next" onmouseover="myfun2(' ➡️')" onmouseout="myfun3()">Next</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="follow">
+                <p>follow us</p>
+                <div class="links">
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+            <p>&copy; 2025 Care Finder | All Rights Reserved</p>
+            <p class="made">Made with ❤️ by Care Finder</p>
+        </div>
+    </footer>
+    <script>
+        let pre = document.getElementById("pre");
+        let next = document.getElementById("next");
+        function myfun1(a) {
+            pre.innerText = a + pre.innerText;
+        }
+        function myfun2(a) {
+            next.innerText += a;
+        }
+        function myfun3() {
+            pre.innerText = "Previous";
+            next.innerText = "Next";
+        }
+    </script>
+</body>
+
+</html>

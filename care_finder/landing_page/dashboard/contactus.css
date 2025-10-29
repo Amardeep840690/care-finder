@@ -1,0 +1,116 @@
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 120px 70px;
+    background-color: #f8fafc;
+    font-family: "Poppins", sans-serif;
+}
+.contact-info {
+    flex: 1;
+    min-width: 320px;
+    color: #1e4d91;
+}
+
+.contact-info h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #153a73;
+}
+
+.contact-info p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.contact-info ul li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #444;
+}
+
+.contact-info ul li strong {
+    color: #153a73;
+}
+
+.contact-info .socials {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+    margin-top: 15px;
+}
+
+.contact-info .socials a {
+    text-decoration: none;
+    font-size: 28px;
+    color: #1e4d91;
+    transition: all 0.3s ease;
+}
+
+.contact-info .socials a:hover {
+    transform: scale(1.2);
+    color: #153a73;
+}
+
+.contact-form {
+    flex: 1;
+    min-width: 320px;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #153a73;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #1e4d91;
+    outline: none;
+}
+
+.contact-form button {
+    background: #1e4d91;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+    background: #153a73;
+}
+
